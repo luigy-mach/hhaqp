@@ -3,6 +3,7 @@
  * https://github.com/facebook/react-native
  * @flow
  */
+import Icon from 'react-native-vector-icons/FontAwesome'
 
 import React, { Component } from 'react';
 import {
@@ -55,7 +56,10 @@ export default class App extends Component<Props> {
             }
           }
           onLogoutFinished={() => alert('Logged out')} />
+           <Icon name='area-chart' />
+           
       </View>
+
     );
   }
 }
