@@ -13,6 +13,7 @@
 //import React from 'react';
 //import { View, Text } from 'react-native';
 import LoginScreen from './app/screens/login'
+import HomeScreen from './app/screens/home'
 import { createStackNavigator } from 'react-navigation'; // Version can be specified in package.json
 
 //class HomeScreen extends React.Component {
@@ -28,8 +29,8 @@ import { createStackNavigator } from 'react-navigation'; // Version can be speci
 export default createStackNavigator(
   {
     Home: LoginScreen,
-    //Details: DetailsScreen,
+    Details: HomeScreen,
   },{
-    initialRouteName: 'Home',
+    initialRouteName: 'Details',
   }
 );
